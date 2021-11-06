@@ -6,8 +6,6 @@
 '''
 import os 
 import sys
-import time
-import schedule 
 import requests
 import playsound as player
 

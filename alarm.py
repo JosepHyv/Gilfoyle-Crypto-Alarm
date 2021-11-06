@@ -24,6 +24,8 @@ def sendMessage(coins, mess):
 		pass
 
 
+
+
 def alert(price):
 	sendMessage("BTC", "upper over $1200MXN")
 	player.playsound(os.path.join("media","./notification.mp3"))

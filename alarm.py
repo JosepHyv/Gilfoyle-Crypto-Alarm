@@ -1,4 +1,3 @@
-#! /usr/bin/python3
 '''
 
 	for help
@@ -14,6 +13,7 @@ urlApi = "https://api.coinbase.com/v2/exchange-rates?currency="
 crypto = "BTC" #default  gilfoyle is BTC
 coin = "USD" #default 
 times = 30 #time in seconds
+supportedCrypto = ["BTC","ETH","BCH","ZEC","LTC","XRP"]
 
 def sendMessage(coins, mess):
 	if sys.platform.lower() == "darwin":
@@ -49,10 +49,10 @@ def launch(price):
 		1 price up
 	"""
 	if float(price) < float(expectedValue):			
-		sendMessage(crypto, """price dropped below {}{}""".format("{:.2f}".format(float(expectedValue - price)), coin))
+		sendMessage(crypto, """price dropped below {} {}""".format("{:.2f}".format(float(expectedValue - price)), coin))
 		return 0
 	elif float(price) > float(expectedValue):
-		sendMessage(crypto, """the price rose above {}{}""".format("{:.2f}".format(float(price - expectedValue)) , coin))
+		sendMessage(crypto, """the price rose above {} {}""".format("{:.2f}".format(float(price - expectedValue)) , coin))
 		return 1
 	else:
 		return -1

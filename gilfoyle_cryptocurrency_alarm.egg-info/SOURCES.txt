@@ -1,0 +1,6 @@
+README.md
+setup.py
+gilfoyle_cryptocurrency_alarm.egg-info/PKG-INFO
+gilfoyle_cryptocurrency_alarm.egg-info/SOURCES.txt
+gilfoyle_cryptocurrency_alarm.egg-info/dependency_links.txt
+gilfoyle_cryptocurrency_alarm.egg-info/top_level.txt
